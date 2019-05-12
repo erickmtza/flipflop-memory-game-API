@@ -1,26 +1,56 @@
-# Express Boilerplate!
+# FlipFlop Memory Game
+Live App link: 
+- [Live Demo](https://flipflop-memory-game.777areri.now.sh/)
 
-This is a boilerplate project used for starting new projects!
+### Description
+flipflop Memory Game offers a memory game exercise that requires the user to find all matching tile pairs until all matching sets are found. It also keeps track of user time to completion. Records are kept and displayed in a arcade styled leaderboard where players with fastest times are ranked.
 
-## Set up
+## Screenshots
+Landing Page:
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+![Landing Page on Mobile](/src/img/LandingPage.PNG)
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+Game:
 
-## Scripts
+![Gameboard](/src/img/Gameboard.PNG)
 
-Start the application `npm start`
+Leaderboard:
 
-Start nodemon for the application `npm run dev`
+![Leaderboard](/src/img/Leaderboard.PNG)
 
-Run the tests `npm test`
+## Built With
+### Front End
+* React
+* CSS
+* Html
+* Javascript
+- Repo: [GitHub Repo](https://github.com/erickmtza/flipflop-memory-game-client)
 
-## Deploying
+### Back End
+* Node.js
+* Express.js
+* RESTful API endpoints
+* PostgreSQL
+* Mocha & Chai (testing)
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+## Features
+
+* Users can store their name in order to play the game.
+* The game allows user interaction that results in trying to complete the objective; to fing matching tiles.
+* A timer is used to calculate the progress of the game.
+* A leaderboard is viewable with the past users and their times.
+
+## Available Scripts
+
+In the project directory, you can run the following npm command lines:
+
+### `npm start` or `npn run dev`
+
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
+
+### `npm test`
+Launches the test runner in the interactive watch mode.<br>
