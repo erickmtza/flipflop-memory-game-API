@@ -9,8 +9,7 @@
     "start": "node src/server.js",
     "migrate": "postgrator --config postgrator-config.js",
     "migrate-production": "postgrator --config postgrator-production-config.js",
-    
-    "predeploy": "npm audit",
+    "predeploy": "npm audit && npm run migrate-production",
     "deploy": "git push heroku master"
   },
   "keywords": [],
@@ -28,7 +27,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.0.2",
+    "mocha": "^6.1.4",
     "nodemon": "^1.18.10",
     "postgrator-cli": "^3.1.0",
     "supertest": "^4.0.2"
